@@ -3,6 +3,13 @@
 interface ImportMetaEnv {
   readonly VITE_GRIDLY_API_KEY: string;
   readonly VITE_GRIDLY_VIEW_ID: string;
+  readonly VITE_apiKey: string;
+  readonly VITE_authDomain: string;
+  readonly VITE_projectId: string;
+  readonly VITE_storageBucket: string;
+  readonly VITE_messagingSenderId: string;
+  readonly VITE_appId: string;
+  readonly VITE_measurementId: string;
 }
 
 interface ImportMeta {
