@@ -1,5 +1,19 @@
 # React + TypeScript + Vite
 
+## Project Setup
+
+Create .env.local file in the root directory and add the following:
+
+```bash
+VITE_apiKey=
+VITE_authDomain=
+VITE_projectId=
+VITE_storageBucket=
+VITE_messagingSenderId=
+VITE_appId=
+VITE_measurementId=
+```
+
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
 Currently, two official plugins are available:
