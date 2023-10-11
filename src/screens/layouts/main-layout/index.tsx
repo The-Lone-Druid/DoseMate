@@ -3,9 +3,9 @@ import React from "react";
 import { Outlet, useLocation, useNavigate } from "react-router-dom";
 import { auth } from "../../../config/firebase.config";
 
-type Props = {};
+interface MainLayoutProps {}
 
-const MainLayout = (props: Props) => {
+const MainLayout: React.FC<MainLayoutProps> = () => {
   const navigate = useNavigate();
   const location = useLocation();
 

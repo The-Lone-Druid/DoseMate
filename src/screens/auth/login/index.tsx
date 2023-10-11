@@ -18,9 +18,9 @@ import { Link } from "react-router-dom";
 import * as Yup from "yup";
 import { TextLogo } from "../../../components";
 
-type Props = {};
+interface LoginScreenProps {}
 
-const LoginScreen = (props: Props) => {
+const LoginScreen: React.FC<LoginScreenProps> = () => {
   const [showPassword, setShowPassword] = React.useState(false);
 
   const loginForm = useFormik({
@@ -64,6 +64,7 @@ const LoginScreen = (props: Props) => {
             <TextField
               id="email"
               name="email"
+              autoComplete="off"
               value={loginForm.values.email}
               onChange={loginForm.handleChange}
               onBlur={loginForm.handleBlur}
@@ -92,6 +93,7 @@ const LoginScreen = (props: Props) => {
             <TextField
               id="password"
               name="password"
+              autoComplete="off"
               value={loginForm.values.password}
               onChange={loginForm.handleChange}
               onBlur={loginForm.handleBlur}
