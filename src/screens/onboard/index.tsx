@@ -23,22 +23,24 @@ const steps = [
     stepsImg: VoiceControlBro,
   },
 ];
+const TOTAL_STEPS = 2;
 
 const OnBoard: React.FC = () => {
   const [activeStep, setActiveStep] = React.useState<number>(0);
+  const navigate = useNavigate();
+  const currentStep = steps[activeStep];
 
   const handleStepperInc = () => {
-    if (activeStep < 2) {
+    if (activeStep < TOTAL_STEPS) {
       setActiveStep((prevStep) => prevStep + 1);
     }
   };
+
   const handleStepperDec = () => {
     if (activeStep !== 0) {
       setActiveStep((prevStep) => prevStep - 1);
     }
   };
-  const currentStep = steps[activeStep];
-  const navigate = useNavigate();
 
   const handleOnboarding = () => {
     localStorage.setItem("onBoarding", "true");
@@ -74,9 +76,9 @@ const OnBoard: React.FC = () => {
         </Typography>
       </div>
       <div className="my-6">
-        <img src={currentStep.stepsImg} alt="" />
+        <img src={currentStep.stepsImg} alt="stepsImg" />
       </div>
-      {activeStep === 2 ? (
+      {activeStep === TOTAL_STEPS ? (
         <div className="w-full max-w-[200px]">
           <Button
             color="primary"

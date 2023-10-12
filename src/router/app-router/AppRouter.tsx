@@ -27,7 +27,7 @@ const AppRouter: React.FC<AppRouterProps> = () => {
         <Route element={<MainLayout />}>
           <Route path="auth" element={<AuthLayout />}>
             <Route path="login" element={<LoginScreen />} />
-            <Route path="signup" element={<SignupScreen />} />R
+            <Route path="signup" element={<SignupScreen />} />
           </Route>
           <Route path="app">
             <Route path="home" element={<HomeScreen />} />
