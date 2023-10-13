@@ -1,4 +1,4 @@
-# React + TypeScript + Vite
+# DoseMate
 
 ## Collaboration - Free For All
 
