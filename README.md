@@ -1,5 +1,15 @@
 # React + TypeScript + Vite
 
+## Collaboration - Free For All
+
+Feel free to collaborate to this repository, we are trying to build
+an app which will help solve a common problem of missing dosage on
+time, we have a Figma design available for the app, and we are
+currently working on the backend, so feel free to contribute to the
+frontend.
+
+[Figma Design Link](https://www.figma.com/file/JDs93zfgDervH7fCXdtQHa/DoseMate-App?type=design&node-id=2%3A5&mode=design&t=1R6O5TjRyi5Nzyv1-1)
+
 ## Project Setup
 
 Create .env.local file in the root directory and add the following:
