@@ -1,7 +1,13 @@
+import { Outlet } from "react-router-dom";
+
 type Props = {};
 
 const AppLayout = (props: Props) => {
-  return <div>AppLayout</div>;
+  return (
+    <div>
+      <Outlet />
+    </div>
+  );
 };
 
 export default AppLayout;
