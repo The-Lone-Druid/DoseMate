@@ -1,8 +1,6 @@
 import { Outlet } from "react-router-dom";
 
-type Props = {};
-
-const AuthLayout = (props: Props) => {
+const AuthLayout = () => {
   return (
     <div id="auth-layout">
       <Outlet />

@@ -42,7 +42,10 @@ const LoginScreen: React.FC<LoginScreenProps> = () => {
   });
 
   const handleSubmit = React.useCallback(
-    async (values: typeof loginForm.values) => {},
+    async (values: typeof loginForm.values) => {
+      console.log("values", values);
+    },
+
     [loginForm.values]
   );
 

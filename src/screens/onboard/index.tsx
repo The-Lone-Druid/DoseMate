@@ -100,11 +100,10 @@ const OnBoard: React.FC = () => {
             size="large"
             sx={{
               padding: "10px 30px",
-              backgroundColor: "#ffffff",
-              opacity: "20%",
-              color: "#ffffff",
+              backgroundColor: "#3a3a3a",
             }}
             onClick={handleStepperDec}
+            style={{ color: "white" }}
           >
             Skip
           </Button>
